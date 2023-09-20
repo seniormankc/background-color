@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+      label{
+        font-style: italic;
+        font-size: 20px;
+      }
+    </style>
+</head>
+<body id="mike">
+   <form action="">
+    <label for="">select color</label><br>
+    <input type="text">
+    <input type="submit">
+   </form>
+   <p >select a background color you want</p>
+       
+<script>  
+var bodi=document.getElementById('mike')//targets the body
+var myform=document.querySelector('form')//target the entire form
+myform.addEventListener('submit',function(e){
+    e.preventDefault()
+
+    var formdata=document.querySelector('input').value
+    bodi.style.background=formdata
+
+    if(bodi.style.background=='black'){
+        bodi.style.color="white"
+    }
+
+})
+    
+  
+    
+ 
+</script>
+</body>
+</html>
+  
+
+ 
+
+    
+   
